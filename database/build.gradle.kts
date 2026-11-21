@@ -24,8 +24,8 @@ android {
 dependencies {
     implementation(project(":core"))
     implementation(libs.androidx.core.ktx)
-    implementation(libs.kotlinx.coroutines.android)
-    implementation(libs.room.runtime)
-    implementation(libs.room.ktx)
+    api(libs.kotlinx.coroutines.android)
+    api(libs.room.runtime)
+    api(libs.room.ktx)
     ksp(libs.room.compiler)
 }
